@@ -6,6 +6,7 @@
       <class name="tests.OrderProductTests">
         <methods>
           <include name="beforeEveryTest"/>
+          <include name="addProductToCart"/>
           <include name="afterEveryMethod"/>
           <include name="afterAllTests"/>
           <include name="removeProductFromCart"/>

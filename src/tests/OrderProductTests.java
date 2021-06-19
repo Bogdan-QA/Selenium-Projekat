@@ -18,18 +18,18 @@ public class OrderProductTests extends BaseTests{
 		driver.manage().window().maximize();
 	}
 	
-//	@Test (priority = 1) 
-//	public void addProductToCart () {
-//		String textForAssertion = excelReader.getStringData("TS03-TC01", 14, 10);
-//		loginFunciton();
-//		myAccountPage.clickMyWishlistsButton();
-//		myWishlistsPage.clickOnTheProductName();
-//		productPage.clickAddToCartButton();
-//		productPage.clickClosePopupAfterAddingToCart();
-//		categoryProductPage.clickOnViewCartButton();
-//		String actualText = myOrderPage.textFromProductNameDesription();
-//		assertEquals(actualText, textForAssertion);
-//	}
+	@Test (priority = 1) 
+	public void addProductToCart () {
+		String textForAssertion = excelReader.getStringData("TS03-TC01", 14, 10);
+		loginFunciton();
+		myAccountPage.clickMyWishlistsButton();
+		myWishlistsPage.clickOnTheProductName();
+		productPage.clickAddToCartButton();
+		productPage.clickClosePopupAfterAddingToCart();
+		categoryProductPage.clickOnViewCartButton();
+		String actualText = myOrderPage.textFromProductNameDesription();
+		assertEquals(actualText, textForAssertion);
+	}
 	
 	@Test (priority = 2) 
 	public void removeProductFromCart () throws InterruptedException {
@@ -62,7 +62,7 @@ public class OrderProductTests extends BaseTests{
 	
 	@AfterMethod
 	public void afterEveryMethod() {		
-	//	driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		driver.navigate().refresh();
 	}
 	

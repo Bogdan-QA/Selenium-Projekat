@@ -13,11 +13,6 @@ public class MyAccountPageTests extends BaseTests{
 		loginFunction();		
 	}
 	
-//	@Test
-//	public void orderHistoryAndDetails () {
-//		String textForAssertion = excelReader.getStringData("TS03-TC02", 10, 10);
-//		myAccountPage.clickOrderHistoryAndDetails();
-//	}
 	
 	
 	@AfterMethod

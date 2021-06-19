@@ -55,7 +55,7 @@ public class MyAccountPage {
 	}
 	
 	public WebElement getOrderHistoryAndDetailsMessage () {
-		return driver.findElement(By.cssSelector("p[class*=info-title]"));   // treba da izmenis. uzmi produkt kad dodje vreme.
+		return driver.findElement(By.cssSelector("p[class*=info-title]"));   
 	}
 	
 	public WebElement getMyAddressesButton () {
